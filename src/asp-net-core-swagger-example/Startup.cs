@@ -8,11 +8,16 @@ namespace asp_net_core_swagger_example
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app)
         {
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUi();
         }
     }
 }
