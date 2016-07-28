@@ -24,6 +24,15 @@ namespace asp_net_core_swagger_example.Controllers
         }
 
         // POST api/values
+        /// <summary>
+        /// Create a new value.
+        /// </summary>
+        /// <remarks>
+        ///     POST /values
+        ///     {
+        ///         "value" : "123"
+        ///     }
+        /// </remarks>
         [HttpPost]
         public void Post([FromBody]string value)
         {
