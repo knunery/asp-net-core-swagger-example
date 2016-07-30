@@ -17,6 +17,8 @@ namespace asp_net_core_swagger_example
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseStaticFiles();
+
             app.UseMvc();
 
             app.UseSwagger();
